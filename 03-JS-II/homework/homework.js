@@ -98,7 +98,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (50 > numero > 20) {
+  if (numero > 20 & numero < 50) {
     return true ;
   }
   return false ;
@@ -113,7 +113,7 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
   var nument = Math.floor(numero)
-  if ((abs(numero) - abs(nument)) === 0) {
+  if ((Math.abs(numero) - Math.abs(nument)) === 0) {
     return true ;
   }
   return false ;
@@ -146,15 +146,15 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1 === 0 | num2 === 0 | num3 === 0) {
     return "Error"
   }
-  else if (num1 < 0 | num2 < 0 | num3 < 0) {
-    return "Hay negativos"
-  }
-  if (num1 > 0 & num1 > num2 & num1 > num3) {
-    return "Numero 1 es mayor y positivo"
-  }
-  else if (num3 > num1 & num3 > num2) {
-    return num3 + 1
-  }
+    if (num1 > 0 & num1 > num2 & num1 > num3) {
+      return "Numero 1 es mayor y positivo"
+    }
+    if (num1 < 0 | num2 < 0 | num3 < 0) {
+     return "Hay negativos"
+    }
+    if (num3 > num1 & num3 > num2) {
+      return num3 + 1
+    }
   return false
 }
 
