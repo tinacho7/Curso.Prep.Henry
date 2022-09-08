@@ -10,7 +10,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[(array.length) - 1] ;
+  return array[array.length - 1] ;
 }
 
 
@@ -102,7 +102,7 @@ function promedioResultadosTest(resultadosTest) {
   for (let i = 0 ; i < resultadosTest.length ; i++) {
     suma += resultadosTest[i] ;
   }
-  var promedio = suma / resultadosTest.length
+  var promedio = suma / resultadosTest.length ;
   return promedio ;
 }
 
@@ -156,7 +156,7 @@ function diaDeLaSemana(numeroDeDia) {
   if (numeroDeDia === 1 | numeroDeDia === 7) {
     return "Es fin de semana" ;
   }
-  return "Es dia Laboral"
+  return "Es dia Laboral" ;
 } 
 
 
@@ -196,7 +196,7 @@ function mesesDelAño(array) {
   var contador = 0 ;
   for (let i = 0 ; i < array.length ; i++) {
     if (array[i] === "Enero" | array[i] === "Marzo" | array[i] === "Noviembre") {
-      contador++
+      contador++ ;
     }
   }
   if (contador === 3) {
@@ -210,7 +210,7 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  var mayores = []
+  var mayores = [] ;
   for (let i = 0 ; i < array.length ; i++) {
     if (array[i] > 100) {
       mayores.push(array[i]) ;
@@ -228,8 +228,8 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  var sumados = []
-  var i = 0
+  var sumados = [] ;
+  var i = 0 ;
   for (i ; i < 10 ; i++) {
     numero += 2 ;
     if (numero === i) {
@@ -251,9 +251,8 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  var sumados = []
-  var i = 0
-  for (i ; i < 10 ; i++) {
+  var sumados = [] ;
+  for (let i = 0 ; i < 10 ; i++) {
     if (i === 5) {
       continue ;
     }
