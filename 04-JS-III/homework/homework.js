@@ -58,11 +58,11 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var frase = ''
-  for (let i = 0 ; i < palabras.length ; i++) {
+  var frase = '' ;
+  for (let i = 0 ; i < (palabras.length) - 1 ; i++) {
     frase += palabras[i] + ' ' ;
   }
-  return frase
+  return frase + palabras[palabras.length - 1] ;
 }
 
 
@@ -102,7 +102,8 @@ function promedioResultadosTest(resultadosTest) {
   for (let i = 0 ; i < resultadosTest.length ; i++) {
     suma += resultadosTest[i] ;
   }
-  return suma / resultadosTest[(resultadosTest.length) - 1] ;
+  var promedio = suma / resultadosTest.length
+  return promedio ;
 }
 
 
